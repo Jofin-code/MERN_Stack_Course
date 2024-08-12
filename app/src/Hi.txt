@@ -1,0 +1,4 @@
+Hi this a text file
+
+
+This is from VS code
