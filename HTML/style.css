@@ -1,0 +1,60 @@
+.div1 h1 {
+    background-color: red;
+  }
+  .div2 h1 {
+    background-color: blue;
+  }
+  h2 {
+    color: red;
+  }
+  .s1 h2 {
+    color: blue;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+  }
+  .menu li {
+    padding-right: 2%;
+    list-style: none;
+    list-style-type: none;
+    
+  }
+  .active {
+    background-color: aqua;
+  }
+
+  .content{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .content div{
+    height: 25vh;
+    border: 1px solid black;
+  }
+
+  .content img{
+    width: 100%;
+    height: 25vh;
+  }
+
+  @media only screen and (max-width:600px) {
+    .menu{
+        display: none;
+    }
+    .content{
+ flex-direction: column;
+    }
+    body{
+
+        background-color: aqua;
+    }
+  }
+a{
+    text-decoration: none;
+}
+  a:hover{
+    color: white;
+    text-decoration: underline;
+  }
