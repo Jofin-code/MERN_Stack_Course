@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .border {
+        border: 1px solid red;
+      }
+      /* .noBorder {
+        border: 1px solid black;
+      } */
+    </style>
+  </head>
+  <body>
+    <input type="text" id="inp" class="hi" />
+    <button id="btn">Click</button>
+  </body>
+  <script>
+    chgBorder = () => {
+      var val = document.getElementById("inp").value;
+      if (val === "") {
+        document.querySelector("#inp").classList.add("border");
+        // document.querySelector("#inp").classList.remove("noBorder");
+      } else {
+        // document.querySelector("#inp").classList.add("noBorder");
+        document.querySelector("#inp").classList.remove("border");
+      }
+    };
+    document.querySelector("#btn").addEventListener("click", chgBorder);
+  </script>
+</html>
