@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <select name="course" id="course">
+      <option value="MongoDB" id="op1">MongoDB</option>
+      <option value="Express js" id="op2">Express js</option>
+      <option value="React js" id="op3">React js</option>
+      <option value="Node js" id="op4">Node js</option>
+    </select>
+    <p id="opt_disp"></p>
+  </body>
+  <script>
+    document.getElementById("course").addEventListener("change", (e) => {
+      //   let val = document.getElementById("course").value;
+      let val = e.target.value;
+      console.log(val);
+      document.getElementById("opt_disp").innerHTML = val;
+    });
+  </script>
+</html>
