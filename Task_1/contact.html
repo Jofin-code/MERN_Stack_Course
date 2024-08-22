@@ -80,12 +80,18 @@
       </div>
       <div>
         <label for="message">Message: </label><br />
-        <textarea class="message" placeholder="Your Message Here"></textarea>
+        <textarea id="message" placeholder="Your Message Here"></textarea>
       </div>
-      <button>Send</button>
+      <button onclick="print()">Send</button>
     </div>
-    <footer>
-      <p>JOFIN © 2024</p>
-    </footer>
   </body>
+  <script>
+    const textArray = [];
+    function print() {
+      text = document.getElementById("message").value;
+      console.log(text);
+      textArray.push(text);
+      console.log(textArray);
+    }
+  </script>
 </html>
