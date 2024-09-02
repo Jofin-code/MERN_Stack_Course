@@ -21,8 +21,7 @@ const getUser = async () => {
     <div >
       {/* {<RouterProvider config = {config} />} */}
       <Home />
-      <About />
-      <button onClick={getUser}>Click to get user list</button>
+     
     </div>
   );
 }

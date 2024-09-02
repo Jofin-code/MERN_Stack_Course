@@ -1,13 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import Login from './Login';
-import Register1 from './Register1';
+import Product from './Product';
+import UserList from './UserList';
 
 function App() {
   return (
     <div className="App">
-     {/* <Login/> */}
-     <Register1/>
+      <Product/>
+      <UserList/>
     </div>
   );
 }
